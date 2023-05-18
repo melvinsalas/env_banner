@@ -23,6 +23,7 @@ class EnvBanner extends StatelessWidget {
     this.location = EnvBannerLocation.topEnd,
     this.ignoreMediaPadding = false,
     this.padding = const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+    this.margin = EdgeInsets.zero,
   });
 
   /// The widget to show behind the banner.
@@ -60,6 +61,9 @@ class EnvBanner extends StatelessWidget {
 
   /// The padding of the banner.
   final EdgeInsetsGeometry padding;
+
+  /// The margin of the banner.
+  final EdgeInsetsGeometry margin;
 
   TextStyle get _baseTextStyle => TextStyle(
         fontSize: fontSize,
@@ -103,6 +107,7 @@ class EnvBanner extends StatelessWidget {
             child: Container(
               decoration: _decoration,
               padding: padding,
+              margin: margin,
               child: Row(mainAxisSize: MainAxisSize.min, children: getTexts()),
             ),
           ),

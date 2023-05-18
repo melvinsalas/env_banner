@@ -1,6 +1,6 @@
 name: env_banner
 description: A simple widget that helps you place a banner on any widget.
-version: 1.0.0+1
+version: 1.0.0+2
 homepage: https://github.com/melvinsalas/env_banner
 issue_tracker: https://github.com/melvinsalas/env_banner/issues
 
